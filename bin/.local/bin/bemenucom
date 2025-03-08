@@ -1,0 +1,25 @@
+#!/bin/bash
+
+bemenu \
+    -H 30 \
+    -f "JetBrains Mono Nerd Font 11" \
+    --nb "#000000" \
+    --nf "#ffffff" \
+    --hb "#ffffff" \
+    --hf "#000000" \
+    --sb "#ffffff" \
+    --sf "#000000" \
+    --cb "#ffffff" \
+    --cf "#000000" \
+    --ch 1 \
+    --cw 1 \
+    --hp 10 \
+    --tb "#000000" \
+    --tf "#ffffff" \
+    --fb "#000000" \
+    --ff "#ffffff" \
+    --fbb "#ffffff" \
+    --fbf "#000000" \
+    --scb "#000000" \
+    --scf "#ffffff"
+
