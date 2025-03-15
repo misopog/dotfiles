@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ $(xrandr | grep "DP-2" | awk '{ print$2 }') == "connected" ]; then
+	autorandr --load docked
+else
+	autorandr --load mobile
+fi

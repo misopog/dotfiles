@@ -1,0 +1,18 @@
+#!/bin/bash
+
+notification() {
+	volume=$(pamixer --get-volume)
+	notify-send -h int:value:$volume "vol"
+}
+case $1 in
+	up)
+		notification $1
+		;;
+	mute)
+		if [[ $(pamixer --get-mute) == true ]]; then
+			notify-send "Muted"
+		else
+			notify-send "Unmuted"	
+		fi
+		;;
+esac

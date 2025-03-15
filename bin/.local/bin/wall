@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# remove the last wallpaper
+rm ~/.cache/lastwall
+
+# create a file to log the last wallpaper 
+touch ~/.cache/lastwall
+
+# echo the wallpaper into the file
+echo $1 > ~/.cache/lastwall
+
+# set the wallpaper
+xwallpaper --zoom $1
+
