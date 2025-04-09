@@ -1,0 +1,83 @@
+2025-04-02 19:37:11.187 [info] [main] Log level: Info
+2025-04-02 19:37:11.187 [info] [main] Validating found git in: "git"
+2025-04-02 19:37:11.187 [info] [main] Using git "2.49.0" from "git"
+2025-04-02 19:37:11.187 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-02 19:37:11.187 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-02 19:37:20.970 [info] [main] Log level: Info
+2025-04-02 19:37:20.970 [info] [main] Validating found git in: "git"
+2025-04-02 19:37:20.970 [info] [main] Using git "2.49.0" from "git"
+2025-04-02 19:37:20.970 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-02 19:37:20.970 [info] > git rev-parse --show-toplevel [2ms]
+2025-04-02 19:37:20.970 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-04-02 19:37:20.970 [info] [Model][openRepository] Opened repository: /home/michal/doc/dev/musicserver/pybackend
+2025-04-02 19:37:20.970 [info] > git config --get commit.template [15ms]
+2025-04-02 19:37:20.970 [info] > git rev-parse --show-toplevel [6ms]
+2025-04-02 19:37:20.970 [info] [Git][getRemotes] No remotes found in the git config file
+2025-04-02 19:37:20.970 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [15ms]
+2025-04-02 19:37:20.973 [info] > git status -z -uall [19ms]
+2025-04-02 19:37:20.973 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+2025-04-02 19:37:20.996 [info] > git rev-parse --show-toplevel [58ms]
+2025-04-02 19:37:21.395 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [404ms]
+2025-04-02 19:37:21.561 [info] > git config --get --local branch.master.vscode-merge-base [155ms]
+2025-04-02 19:37:21.561 [warning] [Git][config] git config failed: Failed to execute git
+2025-04-02 19:37:21.572 [info] > git rev-parse --show-toplevel [178ms]
+2025-04-02 19:37:21.573 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-02 19:37:21.573 [info] > git config --get commit.template [192ms]
+2025-04-02 19:37:21.608 [info] > git show --textconv :src/backend/config/settings.py [13ms]
+2025-04-02 19:37:21.610 [info] > git reflog master --grep-reflog=branch: Created from *. [39ms]
+2025-04-02 19:37:21.625 [info] [Git][getRemotes] No remotes found in the git config file
+2025-04-02 19:37:21.626 [info] > git ls-files --stage -- src/backend/config/settings.py [20ms]
+2025-04-02 19:37:21.644 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [20ms]
+2025-04-02 19:37:21.665 [info] > git status -z -uall [11ms]
+2025-04-02 19:37:21.666 [info] > git cat-file -s 4b3d01097d033106d04868e44ee721528500d636 [31ms]
+2025-04-02 19:37:21.668 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+2025-04-02 19:37:21.926 [info] > git check-ignore -v -z --stdin [1ms]
+2025-04-02 19:37:22.581 [info] > git show --textconv :src/backend/main.py [21ms]
+2025-04-02 19:37:22.585 [info] > git ls-files --stage -- src/backend/main.py [7ms]
+2025-04-02 19:37:22.608 [info] > git cat-file -s 2a9932bd194ece15a8947f877b80bee8685cf6e9 [5ms]
+2025-04-02 19:37:23.801 [info] > git show --textconv :src/backend/playlist/service.py [12ms]
+2025-04-02 19:37:23.803 [info] > git ls-files --stage -- src/backend/playlist/service.py [3ms]
+2025-04-02 19:37:23.813 [info] > git cat-file -s c2ff6443a17d6f1dae4556e74f1fd34ae8003eb9 [3ms]
+2025-04-02 19:37:25.221 [info] > git show --textconv :src/backend/models/playlist.py [13ms]
+2025-04-02 19:37:25.226 [info] > git ls-files --stage -- src/backend/models/playlist.py [7ms]
+2025-04-02 19:37:25.246 [info] > git cat-file -s 1fd163a5ded3d09f3574b7967c7a312b9935d6ae [4ms]
+2025-04-02 19:37:26.942 [info] > git show --textconv :src/backend/models/track.py [25ms]
+2025-04-02 19:37:26.947 [info] > git ls-files --stage -- src/backend/models/track.py [7ms]
+2025-04-02 19:37:26.974 [info] > git cat-file -s 04d7246234a24ba820d8fdfe12c172360514b8fb [6ms]
+2025-04-02 19:37:27.735 [info] > git show --textconv :src/backend/playlist/__init__.py [12ms]
+2025-04-02 19:37:27.737 [info] > git ls-files --stage -- src/backend/playlist/__init__.py [2ms]
+2025-04-02 19:37:27.748 [info] > git cat-file -s e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 [2ms]
+2025-04-02 19:37:28.376 [info] > git show --textconv :src/backend/playlist/service.py [24ms]
+2025-04-02 19:37:28.380 [info] > git ls-files --stage -- src/backend/playlist/service.py [6ms]
+2025-04-02 19:37:28.403 [info] > git cat-file -s c2ff6443a17d6f1dae4556e74f1fd34ae8003eb9 [6ms]
+2025-04-02 19:37:32.139 [info] > git check-ignore -v -z --stdin [5ms]
+2025-04-02 19:37:32.827 [info] > git show --textconv :src/backend/library/service.py [23ms]
+2025-04-02 19:37:32.832 [info] > git ls-files --stage -- src/backend/library/service.py [6ms]
+2025-04-02 19:37:32.856 [info] > git cat-file -s a8fc8b5d645ba445e9c59dcc0b7056549c3fec7e [5ms]
+2025-04-02 19:37:33.487 [info] > git show --textconv :src/backend/library/scanner.py [13ms]
+2025-04-02 19:37:33.490 [info] > git ls-files --stage -- src/backend/library/scanner.py [4ms]
+2025-04-02 19:37:33.502 [info] > git cat-file -s dbfefb4309d8681c291f324edf08dab8effd361f [3ms]
+2025-04-02 19:37:44.796 [info] > git show --textconv :src/backend/library/service.py [22ms]
+2025-04-02 19:37:44.800 [info] > git ls-files --stage -- src/backend/library/service.py [5ms]
+2025-04-02 19:37:44.824 [info] > git cat-file -s a8fc8b5d645ba445e9c59dcc0b7056549c3fec7e [6ms]
+2025-04-02 19:37:46.872 [info] > git show --textconv :src/backend/library/stream.py [20ms]
+2025-04-02 19:37:46.875 [info] > git ls-files --stage -- src/backend/library/stream.py [5ms]
+2025-04-02 19:37:46.897 [info] > git cat-file -s a29daeae617879d56ed92bdb3ac030123b2ee533 [5ms]
+2025-04-02 19:37:50.986 [info] > git show --textconv :src/backend/config/settings.py [14ms]
+2025-04-02 19:37:50.988 [info] > git ls-files --stage -- src/backend/config/settings.py [4ms]
+2025-04-02 19:37:51.001 [info] > git cat-file -s 4b3d01097d033106d04868e44ee721528500d636 [3ms]
+2025-04-02 19:37:52.792 [info] > git show --textconv :src/backend/library/scanner.py [11ms]
+2025-04-02 19:37:52.794 [info] > git ls-files --stage -- src/backend/library/scanner.py [3ms]
+2025-04-02 19:37:52.806 [info] > git cat-file -s dbfefb4309d8681c291f324edf08dab8effd361f [3ms]
+2025-04-02 19:38:09.143 [info] > git check-ignore -v -z --stdin [2ms]
+2025-04-02 19:38:11.018 [info] > git check-ignore -v -z --stdin [2ms]
+2025-04-02 19:38:27.911 [info] [Git][getRemotes] No remotes found in the git config file
+2025-04-02 19:38:27.914 [info] > git config --get commit.template [26ms]
+2025-04-02 19:38:27.917 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [7ms]
+2025-04-02 19:38:27.966 [info] > git status -z -uall [29ms]
+2025-04-02 19:38:27.970 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+2025-04-02 19:42:47.430 [info] [Git][getRemotes] No remotes found in the git config file
+2025-04-02 19:42:47.434 [info] > git config --get commit.template [36ms]
+2025-04-02 19:42:47.436 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [7ms]
+2025-04-02 19:42:47.490 [info] > git status -z -uall [28ms]
+2025-04-02 19:42:47.495 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [8ms]
